@@ -27,7 +27,7 @@ function About() {
          <div className="column left">
               <div className="text">My creative skills &amp; experiences.</div>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, ratione error est recusandae consequatur, iusto illum deleniti quidem impedit, quos quaerat quis minima sequi. Cupiditate recusandae laudantium esse, harum animi aspernatur quisquam et delectus ipsum quam alias quaerat? Quasi hic quidem illum. Ad delectus natus aut hic explicabo minus quod.</p>
-              <a href="#">Read more</a>
+              
             </div> 
             </Col>
 
