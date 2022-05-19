@@ -1,19 +1,15 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Container, Row ,Col} from "react-bootstrap";
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button';
 import Particle from "../Particle";
-import { useForm, ValidationError } from '@formspree/react';
 import './Contact.css';
+
 function ResumeNew() {
-const [state, handleSubmit] = useForm("xeqpvnaj");
-  if (state.succeeded) {
-      return <p>Thanks for joining!</p>;
-  } 
-  
-  return (
+return (
    <>
 <Form className="contact"  >
+  <Particle />
 <Row>
    <Col>
   <Form.Group className=" mb-3">
