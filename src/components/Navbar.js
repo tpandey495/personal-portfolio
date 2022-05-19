@@ -2,13 +2,14 @@ import React, { useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
-import logo from "../Assets/logo.png";
+import logo from "../Assets/images/tarun5.png";
 import { Link } from "react-router-dom";
 import * as AiIcons from 'react-icons/ai';
 import * as GiIcons from 'react-icons/gi';
 import * as ImIcons from 'react-icons/im';
 
 function NavBar() {
+
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
 
@@ -23,13 +24,16 @@ function NavBar() {
   window.addEventListener("scroll", scrollHandler);
 
   return (
+    
     <Navbar
       expanded={expand}
       fixed="top"
       expand="md"
       className={navColour ? "sticky" : "navbar"}
     >
+     
       <Container>
+       
         <Navbar.Brand href="/" className="d-flex">
           <img src={logo} className="img-fluid logo" alt="brand" />
         </Navbar.Brand>
@@ -39,6 +43,7 @@ function NavBar() {
             updateExpanded(expand ? false : "expanded");
           }}
         >
+          
           <span></span>
           <span></span>
           <span></span>
@@ -75,21 +80,22 @@ function NavBar() {
             </Nav.Item>
 
             
-
             <Nav.Item>
               <Nav.Link
-                href="https://blogs.soumya-jit.tech/"
-                target="_blank"
-                rel="noreferrer"
+                as={Link}
+                to="/Contact"
+                onClick={() => updateExpanded(false)}
               >
-                <AiIcons.AiOutlineContacts style={{ marginBottom: "2px" }} /> Contact
+                <AiIcons.AiOutlineFundProjectionScreen
+                  style={{ marginBottom: "2px" }}
+                />{" "}
+                Contact
               </Nav.Link>
             </Nav.Item>
 
-
             <Nav.Item>
               <Nav.Link
-                href="https://blogs.soumya-jit.tech/"
+                href="https://codetou.blogspot.com/"
                 target="_blank"
                 rel="noreferrer"
               >
